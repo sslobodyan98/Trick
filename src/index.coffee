@@ -1,7 +1,8 @@
 styles = """
 /*
- * "my love gift"💕 v0.0.1
- * Authored by Svyatoslav
+ * A love trick 
+ * Represented by Mr.D.
+ * Please waiting for initialization...
  */
 
 body {
@@ -12,13 +13,12 @@ body {
 
 /*
  * ...
- * ...hello?
- * 大家好！我是翠翠！idealclover~
- * 情人节快到了，该给女朋友点什么呢~
- * 写一个网页给子枨吧ww送她一颗小心心~
- * 可是~要怎么做呢~
- * 首先做一个框框来放我们的代码吧ww
- * 那么~开动啦！！
+ * ...hello？
+ * CHICKEN
+ * 因为想不到什么好玩的，就暂时写一个网页送给咕噜咕噜叭
+ * 好像......好像可以送她一颗小心心！
+ * 可第一步就好难QAQ
+ * 不管了，先做一个框框来放我们的代码，哼
  */
 
 pre {
@@ -35,24 +35,25 @@ pre {
 }
 
 /*
- * 不行不行，全是白色看代码都要看昏了
- * 我需要语法高亮~那我们就动手实现一下它吧~
- * Colors based on Base16 Ocean Dark
+ * 这样的字儿颜色单调的过分了OTZ
+ * 来个小魔法~
+ * 阿巴阿巴，语法高亮！
+ * Colors based on Self-Design.
  */
 
 pre em:not(.comment) { font-style: normal; }
 
-.comment       { color: #707e84; }
-.selector      { color: #c66c75; }
-.selector .key { color: #c66c75; }
-.key           { color: #c7ccd4; }
-.value         { color: #d5927b; }
+.comment       { color: #fdf6e3; }
+.selector      { color: #92c1d6; }
+.selector .key { color: #92c1d6; }
+.key           { color: #ff4747; }
+.value         { color: #f78754; }
 
 
 /*
- * 呦吼你看~代码高亮实现啦~接下来我们开工吧！
- * 首先我们把这个代码框移一下吧~它太占地方啦
- * 由于是响应式布局~所以在手机上和电脑上有不同的显示效果呦
+ * 哼哼哼你看~代码高亮实现啦~但是不能松懈!
+ * 首先我们把这个代码框移一下~大概要预留一半空间
+ * 考虑到屏幕大小不一样怎么办呢？嘿嘿嘿，响应式布局已经被考虑到了！
  */
 
 @media screen and (max-width: 768px) {
@@ -64,7 +65,7 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 用代码做一颗小心心！
+ * 总算是到了❤的环节啦
  */
 
 @media screen and (max-width: 768px) {
@@ -131,13 +132,13 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 这可是~我的小心心~
- * 我要给它签上我的名字！
- * >v<
+ * 唔，似乎少了点什么
+ * 原来是少了我自己~
+ * (o゜▽゜)o☆
  */
 
 #heart i::before {
-  content: 'idealclover';
+  content: 'Mr.D';
   position: absolute;
   z-index: 9;
   width: 100%;
@@ -151,7 +152,7 @@ pre em:not(.comment) { font-style: normal; }
 
 /*
  * 接下来做什么呢~
- * 我们让这颗心跳起来吧！
+ * 让它跳动起来或许是个好主意
  */
 
 @-webkit-keyframes heartbeat {
@@ -195,7 +196,7 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 好哒！接下来准备让它跳起来吧ww
+ * 好der！接下来准备让它跳起来吧w
  */
 
 #heart, #echo {
@@ -223,7 +224,7 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 准备好了嘛~！
+ * 好像可以了诶
  */
 
 #heart, #echo {
@@ -233,9 +234,7 @@ pre em:not(.comment) { font-style: normal; }
  *
  * ...2...
  *
- * ...1...
- *
- * 再等一下~略略略~
+ * 等等还有一步！
  *
  */
 
@@ -249,22 +248,19 @@ pre em:not(.comment) { font-style: normal; }
 }
 
 /*
- * 诶嘿~~
- * 这样我们的小心心就做好啦~
- * 怎么样~ >v< 还好看吗~~
- * 亲爱哒！情人节快乐！
- * 爱你哦！
- *
+ * 诶嘿嘿嘿~
+ * 这样一颗跳动的心就画好啦~
+ * 还可以嘛，哼哼哼
+ * 希望咕噜咕噜看到这里能开开心心的！
+ * 溜啦溜啦QAQ
  */
 
 /*
- * "my love gift" v0.0.1
  * Robot rights protected under BOT License & Apache2 license
  * Inspired by pen#PwLXXP
- * 谨以此网页献给我的女朋友子枨💕
- * 你最可爱ww
  */
 """
+
 finalStyle = styles
 openComment = false
 isOn = true
@@ -317,16 +313,13 @@ $('body').append """
 	<span id="echo"></span>
 	<span id="heart"><i></i></span>
 	<pre id="style-text"></pre>
+
   <div style = 'position: fixed;left: 30px;bottom: 10px;'>
     <a id='skipAnimation'>跳过动画</a>
-    <a style='color: #fff' href='http://love.idealclover.top'>重新播放</a>
-    <a style='color: #fff' target="_blank" href='https://github.com/idealclover/Love-Gift'>项目地址</a>
-    <a style='color: #fff' target="_blank" href='https://www.idealclover.top/'>我的博客</a>
   </div>
+
 """
 
-
-#  <a href='https://www.idealclover.top'>idealclover</a>
 
 
 # faster typing in small iframe on codepen homepage
